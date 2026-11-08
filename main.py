@@ -10,7 +10,7 @@ from fastapi import FastAPI, HTTPException, Request
 logging.basicConfig(level="INFO", format="%(asctime)s | %(message)s")
 log = logging.getLogger("assistant")
 
-BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "").strip()
+BOT_TOKEN = "9065532774:AAEJuItSw8u6hF2YRI68aGnEV0ZU83-2KV8"
 SECRET = os.getenv("WEBHOOK_SECRET", "").strip()
 _chat_id: Optional[str] = os.getenv("TELEGRAM_CHAT_ID", "").strip() or None
 
